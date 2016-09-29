@@ -4,9 +4,9 @@ FROM composer/composer:alpine
 MAINTAINER Louis Lagrange <lagrange.louis+docker@gmail.com>
 
 ## Install gpg
-RUN apt-get update \
-  && apt-get install -y gpg curl \
-  && apt-get clean
+RUN apk --no-cache add \
+    gpg \
+    curl
 
 ## Install NodeJS (source from nodejs/docker-node)
 # gpg keys listed at https://github.com/nodejs/node

@@ -5,7 +5,7 @@ MAINTAINER Louis Lagrange <lagrange.louis+docker@gmail.com>
 
 ## Install gpg
 RUN apk --no-cache add \
-    gpg \
+    gnupg \
     curl
 
 ## Install NodeJS (source from nodejs/docker-node)

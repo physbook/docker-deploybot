@@ -7,8 +7,7 @@ MAINTAINER Louis Lagrange <lagrange.louis+docker@gmail.com>
 RUN apk --no-cache add \
     nodejs \
     bash \
-    libpng-dev \
-    libgmp-dev
+    gmp-dev
 
 RUN docker-php-ext-install gmp
 

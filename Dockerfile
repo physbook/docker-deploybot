@@ -7,9 +7,7 @@ MAINTAINER Louis Lagrange <lagrange.louis+docker@gmail.com>
 RUN apk --no-cache add \
     nodejs \
     bash \
-    gmp-dev
-
-RUN docker-php-ext-install gmp
+    php7-gmp
 
 ## Install NodeJS tools
 RUN npm install -g bower \

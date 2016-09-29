@@ -4,6 +4,8 @@ FROM composer/composer:alpine
 MAINTAINER Louis Lagrange <lagrange.louis+docker@gmail.com>
 
 ## Install nodejs and PHP extensions
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 RUN apk --no-cache add \
     nodejs \
     bash \

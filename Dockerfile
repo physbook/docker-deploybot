@@ -5,7 +5,8 @@ MAINTAINER Louis Lagrange <lagrange.louis+docker@gmail.com>
 
 ## Install nodejs
 RUN apk --no-cache add \
-    nodejs
+    nodejs \
+    bash
 
 ## Install NodeJS tools
 RUN npm install -g bower \

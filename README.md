@@ -1,11 +1,12 @@
 # docker-deploybot
-Docker for DeployBot: PHP and NodeJS with build tools
+Docker for Buddy: PHP and NodeJS with build tools
 
-Specifically designed to build [Phy'sbook](https://physbook.fr) and have everything ready for deployment by [DeployBot](https://deploybot.com/), this Docker image configuration includes:
+Specifically designed to build [Phy'sbook](https://physbook.fr) and have everything ready for deployment by [Buddy](https://buddy.works), this Docker image configuration includes:
 
 - Alpine Linux
 - PHP 7
 - Composer
+- PHPUnit
 - Git
 - NodeJS 4.6 (LTS)
 - Gulp

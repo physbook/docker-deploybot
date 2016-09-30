@@ -20,5 +20,10 @@ RUN docker-php-ext-configure gmp \
 RUN npm install -g bower \
   && npm install -g gulp-cli
 
+# Install phpunit
+RUN wget https://phar.phpunit.de/phpunit.phar \
+  && chmod +x phpunit.phar \
+  && mv phpunit.phar /usr/local/bin/phpunit
+
 # Reset entrypoint
 ENTRYPOINT []

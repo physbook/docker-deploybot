@@ -13,8 +13,11 @@ RUN apk --no-cache add \
     gmp-dev \
     php7-pear
 
+ADD php.ini /usr/local/etc/php/
+
 RUN docker-php-ext-install gmp \
-  && docker-php-ext-install pdo_mysql
+  && docker-php-ext-install pdo_mysql \
+  && docker-php-ext-install intl
 
 # Install NodeJS tools
 RUN npm install -g bower \
